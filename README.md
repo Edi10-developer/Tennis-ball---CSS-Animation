@@ -2,8 +2,7 @@
 
 # Tennis Ball + Hover Effects
 
-A layout that have to work on both desktop and mobile and tablet.
-The technologies used are HTML and CSS Flexbox.
+The technologies used are HTML and CSS Animations.
 
 [Live Site](https://japan-traveling-website-template.netlify.app/)
 
