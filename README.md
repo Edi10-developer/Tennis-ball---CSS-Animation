@@ -4,7 +4,7 @@
 
 The technologies used are HTML and CSS Animations.
 
-[Live Site](https://tennis-ball.netlify.app/nivel3.html)
+[Live Site](https://tennis-ball.netlify.app/)
 
 
 ## Tennis ball:
