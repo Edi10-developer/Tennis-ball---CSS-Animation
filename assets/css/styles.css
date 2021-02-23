@@ -18,11 +18,19 @@ body{
     overflow: hidden;
 }
 
-button{
+button, .btn{
     display: block;
     margin: 20px auto;
     padding: 8px;
     background-color:#c9f364;
+    color: green;
+}
+
+.btn{
+    text-decoration: none;
+    width: 90px;
+    text-align: center;
+    border: 1px solid white;
 }
 
 .tennis-ball {

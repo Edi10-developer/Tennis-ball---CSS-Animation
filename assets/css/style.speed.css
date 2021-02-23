@@ -17,22 +17,29 @@ body{
     background-color: white;
     overflow: hidden;
 }
-
-button{
+button, .btn{
     display: block;
     margin: 20px auto;
     padding: 8px;
     background-color:#c9f364;
+    color: green;
+}
+
+.btn{
+    text-decoration: none;
+    width: 90px;
+    text-align: center;
+    border: 1px solid white;
 }
 
 .tennis-ball {
 	position: block;
-	width: 150px;
-	height: 150px;
-	background: #c9f364;
+	width: 120px;
+	height: 120px;
+	background: #5ce95c;
 	border-radius: 50%;
 	overflow: hidden;
-	animation: ball-animation 4.5s linear infinite;
+    -webkit-animation: ball-animation 4.5s linear infinite;
 }
 
 .tennis-ball:before {
@@ -65,68 +72,42 @@ button{
 ******************/
 @keyframes ball-animation{
     0%{
-        transform: translate(50%, 50%);
+        transform: translate(0%, 0%); 
+    }
+    5%{
+        transform: translate(100%, 300%);
     }
     15%{
-        transform: translate(100%, 250%);
-    }
-    30%{
         transform: translate(200%, 20%);
     }
-    45%{
-        transform: translate(400%, 250%);
+    17%{
+        transform: translate(200%, 18%);
     }
-    60%{
-        transform: translate(500%, 20%);
+    25%{
+        transform: translate(300%, 300%);
     }
-    75%{
-        transform: translate(600%, 200%);
+    39%{
+        transform: translate(400%, 10%);
     }
-    90%{
-        transform: translate(500%, 250%);
+    41%{
+        transform: translate(400%, 15%);
     }
-    100%{
-        transform: translate(50%, 50%);
+    47%{
+        transform: translate(500%, 300%);
     }
-}
-
-
-/*  Mobile view
-**********************/
-@media(max-width: 481px){
-.tennis-ball {
-	position: block;
-	width: 80px;
-	height: 80px;
-	background: #c9f364;
-	border-radius: 50%;
-	overflow: hidden;
-	animation: ball-animation 4.5s linear infinite;
-}
-
-@keyframes ball-animation{
-    0%{
-        transform: translate(0%, 20%);
+    62%{
+        transform: translate(600%, 10%);
     }
-    15%{
-        transform: translate(80%, 500%);
+    64%{
+        transform: translate(600%, 10%);
     }
-    30%{
-        transform: translate(150%, 20%);
+    68%{
+        transform: translate(800%, 250%);
     }
-    45%{
-        transform: translate(200%, 500%);
+    72%{
+        transform: translate(700%, 300%);
     }
-    60%{
-        transform: translate(230%, 20%);
-    }
-    75%{
-        transform: translate(350%, 250%);
-    }
-    90%{
-        transform: translate(260%, 500%);
-    }
-    
-}
-
+    87%{
+        transform: translate(250%, 130%);
+    } 
 }

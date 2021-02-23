@@ -1,0 +1,120 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+}
+i{
+    font-size: 40px;
+}
+/* Basic letters container
+*********************************/
+.item{
+    flex-grow:1;
+    border: 3px solid white;
+    justify-content: center;
+    align-self: center;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    color: white;
+    font-size: 50px;
+    overflow: hidden;
+}
+.item p{
+    align-self: center;
+    margin: 0 auto;
+    position: absolute;
+}
+
+/* Colorated letters containers
+*********************************/
+/* 1. - IT Div */
+.item:first-child{
+    background-color: #244F75;
+    animation: itWelcome 300ms ease-in;
+}
+/* 2. - A Div */
+.item:nth-child(2){
+    background-color: #60BFBF;
+    animation: aWelcome 300ms ease-in;
+}
+/* 3. - CA Div */
+.item:nth-child(3){
+    background-color: #965B8A;
+    animation: caWelcome 300ms ease-in;
+}
+/* 4. - DE Div */
+.item:nth-child(4){
+    background-color: #F9C256;
+    animation: deWelcome 450ms ease-in;
+}
+/* 5. - MY Div */
+.item:nth-child(5){
+    background-color: #F35B5B;
+    animation: myWelcome 300ms ease-in;
+}
+
+/* Opacity container
+*********************************/
+.opacity-item{
+    flex-grow: 1;
+    display: block;
+    width:100%;
+    height: 100%;
+    transform: rotate(-40deg);
+    background-color: rgba(255, 255, 255, .12);
+    transition: all 350ms;
+}
+.opacity-item:hover{
+    transform: scale(1.5);
+}
+
+/***********************************
+      A N I M A T I O N S
+************************************/
+/* 1. - IT Div */
+@keyframes itWelcome{
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+/* 2. - A Div */
+@keyframes aWelcome{
+    from{
+        transform: translateY(100%);
+    }
+    to{
+        transform: translateY(0%);
+    }
+}
+/* 3. - CA Div */
+@keyframes caWelcome{
+    from{
+        transform: translateY(-100%);
+    }
+    to{
+        transform: translateY(0%);
+    }
+}
+/* 4. - DE Div */
+@keyframes deWelcome{
+    from{
+        transform: translateY(100%);
+    }
+    to{
+        transform: translateY(0%);
+    }
+}
+/* 5. - MY Div */
+@keyframes myWelcome{
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
